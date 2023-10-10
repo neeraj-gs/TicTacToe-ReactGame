@@ -1,4 +1,5 @@
 import Board from "./TicTacToeGame/Board";
+import './App.css'
 
 function App() {
   return (
