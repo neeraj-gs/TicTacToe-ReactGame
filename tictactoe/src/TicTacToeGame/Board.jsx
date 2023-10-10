@@ -9,6 +9,9 @@ const Board = () => {
 
   const handleCLick=(index)=>{
     //FO rcurrent PLayer
+    if(state[index]!=null){
+      return;
+    }
     const oldstate = [...state];
     oldstate[index] = isXturn? "X":"O";
     setState(oldstate);
