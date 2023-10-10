@@ -5,9 +5,14 @@ import Square from './Square'
 const Board = () => {
 
   const [state,setState] = useState(Array(9).fill(null))
+  const [isXturn,SetIsXturn] = useState(true);
 
   const handleCLick=(index)=>{
-    console.log('Clicked on',index)
+    //FO rcurrent PLayer
+    const oldstate = [...state];
+    oldstate[index] = isXturn? "X":"O";
+    setState(oldstate);
+    SetIsXturn(!isXturn)
   }
 
 
