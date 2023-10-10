@@ -36,11 +36,15 @@ const Board = () => {
   }
   const isWinner = CheckWinner();
 
+  const handleReset = ()=>{
+    setState(Array(9).fill(null))
+  }
+
 
   return (
     <>
     <div className='board-container'>
-      {isWinner? <>{isWinner} Won the Game</> :
+      {isWinner? <>{isWinner} Won the Game <button onClick={handleReset}>Play Again</button> </> :
       <>
       <div className='board-row'>
         <Square onClick={()=>handleCLick(0)} value={state[0]} />
