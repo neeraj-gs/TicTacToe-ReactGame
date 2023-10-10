@@ -68,3 +68,5 @@ const Board = () => {
 }
 
 export default Board
+
+//Added all Fucntoinalities
