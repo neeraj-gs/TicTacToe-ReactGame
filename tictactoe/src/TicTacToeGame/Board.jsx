@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import Square from './Square'
+import React, { useEffect, useState } from 'react';
+import Square from './Square';
 
 
 const Board = () => {
@@ -96,3 +96,4 @@ const Board = () => {
 export default Board
 
 //Added all Fucntoinalities
+//Need to ADD more styles are presetn it in a better way
