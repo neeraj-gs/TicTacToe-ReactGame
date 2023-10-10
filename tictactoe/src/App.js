@@ -1,7 +1,9 @@
+import Board from "./TicTacToeGame/Board";
+
 function App() {
   return (
-    <div>
-      
+    <div className="App">
+      <Board />
     </div>
   );
 }
