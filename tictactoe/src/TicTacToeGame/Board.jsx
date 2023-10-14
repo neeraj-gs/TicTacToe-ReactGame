@@ -51,14 +51,14 @@ const Board = () => {
     }else if(state.every((s)=>s!==null)){
       SetisDraw(true)
     }
-  },[state])
+  },[state,CheckWinner])
 
 
   return (
     <div className='board-container'>
       {isDraw ? (
         <>
-          <h2>Its a Draw! Match <button onClick={handleReset}>Play Again</button></h2>
+          <h2>Its a Draw! Match <button onClick={handleReset}> Play Again</button></h2>
         </>
       ): (
         <>
